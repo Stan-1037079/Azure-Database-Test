@@ -1,5 +1,4 @@
 Instructie voor het starten van de container
 Open een terminal en navigeer naar de directory die de 'Dockerfile'bevat. 
-Gebruik vervolgens in de terminal het commando: 'docker build -t test .'
-Nadat de image succesvol is gebouwd kan de Docker container gestart worden door het volgende commando: 'docker run -p 5200:5200 test'
-Nu de container draait wordt de applicatie gehost op http://127.0.0.1:5200
+Gebruik vervolgens het commando: docker build -t testapp . 
+Nadat de image succesvol is gebouwd kan de Docker container gestart worden door het volgende commando: docker run -p 5200:5200 -d testapp
